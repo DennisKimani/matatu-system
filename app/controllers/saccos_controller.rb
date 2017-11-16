@@ -1,0 +1,2 @@
+class SaccosController < ApplicationController
+end
