@@ -1,0 +1,8 @@
+<h2>Welcome to
+  <%= @sacco.name %>
+  family tree.</h2>
+<p><%= link_to "Edit", edit_sacco_path(@sacco) %>|
+  <%= link_to "Delete", sacco_path(@sacco),
+                           :data => {:confirm => "You sure?",
+                                     :method => "delete"} %>|
+</p>
