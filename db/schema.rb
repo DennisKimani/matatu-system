@@ -16,6 +16,10 @@ ActiveRecord::Schema.define(version: 20171116103218) do
   enable_extension "plpgsql"
 
   create_table "saccos", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.integer "phone"
+    t.string "logo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
