@@ -1,1 +1,11 @@
-<h1>index page.</h1>
+<h1>NGANYA.</h1>
+
+<ul>
+  <% @saccos.each do |sacco| %>
+    <li style="font-size: 20px"><strong><%= link_to sacco.name, sacco_path(sacco) %> :- </strong></li>
+  <% end %>
+</ul>
+
+<br>
+<h2>Add a Sacco.</h2>
+<%= link_to "New Sacco", new_sacco_path %>
